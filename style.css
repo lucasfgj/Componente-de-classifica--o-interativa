@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-blue2: hsl(213, 18%, 24%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteiner{
+    width: 400px;
+    height: 390px;
+    border-radius: 20px;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--Dark-Blue);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    background-color: var(--Dark-Blue);
+    gap: 20px;
+    height: 310px;
+    width: 320px;
+}
+.star-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--Dark-blue2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color:var(--White);
+}
+p{  
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color:var(--Medium-Grey);
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.numeral{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    background-color: var(--Dark-blue2);
+    color: var(--Light-Grey);
+}
+.send{
+    width: 310px;
+    height: 40px;
+    background-color: var(--Orange);
+    border-radius: 30px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--White);
+}
+.send:hover{
+    cursor: pointer;
+    color: var(--Orange);
+    background-color:var(--White);
+}
+.card2{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Dark-Blue);
+    gap: 20px;
+    height: 310px;
+    width: 320px;
+}
+.card2 h2{
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+.txtP{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: var(--Dark-blue2);
+    height: 30px;
+    width: 200px;
+}
+.txtP p{
+    color: var(--Orange);
+}
+.card2 p {
+    text-align: center;
+}
+#valor{
+    width: 8px;
+}
+.card-none{
+    display: none;
+}
+.card-flex{
+    display: flex;
+}
+.attribution { 
+    font-size: 15px; 
+    text-align: center;
+    position: relative;
+    top: 21vh;
+}
+.attribution p{
+    font-size: 15px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media(max-width: 450px){
+    .conteiner{
+        width: 370px;
+    }
+}
+@media(max-width: 400px){
+    .conteiner{
+        width: 320px;
+        height: 350px;
+    }
+    .card, .card2{
+        width: 280px;
+    }
+    .card h1{
+        font-size: 28px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+    form{
+        gap: 10px;
+    }
+    .numeral{
+        width: 45px;
+        height: 45px;
+    }
+    .send{
+        width: 280px;
+        height: 30px;
+    }
+    .attribution{
+        width: 300px;
+        text-align: center;
+    }
+}
+@media(max-width: 370){
+    .attribution{
+        width: 450px;
+    }
+}
+    

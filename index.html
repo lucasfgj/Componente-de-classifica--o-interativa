@@ -5,15 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
 <body>
- 
-  <!-- Rating state start -->
   <div class="conteiner">
     <div class="card" id="primeiro_card">
       <div class="star-icon">
@@ -21,9 +15,8 @@
       </div>
       <h1>How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated 
-        to help us improve our offering!
-      </p>
-      <form action="">
+        to help us improve our offering!</p>
+      <form>
         <button type="button" class="numeral" onmouseover="entrar(this)" onmouseout="sair(this)" value="1" onclick="botao('1')">1</button>
         <button type="button" class="numeral" onmouseover="entrar(this)" onmouseout="sair(this)" value="2" onclick="botao('2')">2</button>
         <button type="button" class="numeral" onmouseover="entrar(this)" onmouseout="sair(this)" value="3" onclick="botao('3')">3</button>
@@ -33,15 +26,14 @@
       <button type="submit" class="send" id="enviar" onclick="comfirm()">Submit</button>
     </div>
     <div class="card2" id="segundo_card">
-      <img src="./images/illustration-thank-you.svg" alt="">
+      <img src="./images/illustration-thank-you.svg" alt="imagem-illustration-thank-you">
       <div class="txtP">
         <!-- <p>You selected 4 out of 5</p> -->
       </div> 
       <h2>Thank you!</h2>
       <p>
         We appreciate you taking the time to give a rating.  you ever need more support, 
-        don’t hesitate to get in touch!
-      </p>
+        don’t hesitate to get in touch!</p>
     </div>
     
   </div>
